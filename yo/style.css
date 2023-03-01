@@ -1,0 +1,119 @@
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+    font-family: Oswald;
+}
+.navbar a {
+    display: block;
+    padding: 25px 25px;
+    color: #9DC08B;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    background: #609966;
+    display:flex;
+}
+body {
+    text-align: center;
+    font-family: Josefin Sans;
+    background-color: #EDF1D6;
+
+}
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 63px;
+    background: #40513B;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+.title { 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 30px;
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #40513B;
+}
+p {
+    margin-bottom: 40px;
+    font-size: 15px;
+    color: #40513B;
+    padding: 0 150px;
+}
+.header {
+    display:block;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    background-color: #EDF1D6;
+    background-size: cover;
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+tr, td{
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+table{
+
+    border-style: groove;
+    border-color: rgb(119, 130, 48);
+    background-color: rgb(213, 221, 162);
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    padding: 2px;
+    border-radius: 2%;
+  
+  }
+  @keyframes example {
+    0%   {background-color: #EAE7B1;}
+    25%  {background-color: #A6BB8D;}
+    50%  {background-color: #61876E;}
+    70%  {background-color: #3C6255;}
+    80%  {background-color: #A6BB8D;}
+    100% {background-color: #EAE7B1;}
+  }
+
+@media (max-width: 768px) {
+    p {
+        padding: 0 50px;
+    }
+    .title{
+        margin-bottom: 0px;
+        font-size: 40px;
+    }
+    .sau {
+        height: 100vh;
+        padding: 50px 0;
+    }
+    .about {
+        height: 100vh;
+        padding: 50px 0;
+    }
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .f-enlaces {
+        display: none;
+    }
+
+    .navbar {
+        display: none;
+    }
+}
